@@ -1,0 +1,56 @@
+###
+POST http://localhost:3000/user HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Saif",
+    "lastName": "Test",
+    "phone": "01234567890",
+    "password": "123456",
+    "tosAgreement": true
+  }
+
+###
+GET  http://localhost:3000/user?phone=01234567890 HTTP/1.1
+
+###
+PUT http://localhost:3000/user HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Saif2",
+    "phone": "01234567890",
+    "password": "dfgdg5345"
+  }
+
+###
+DELETE http://localhost:3000/user HTTP/1.1
+content-type: application/json
+
+{
+    "phone": "01234567890"
+  }
+
+###
+POST http://localhost:3000/token HTTP/1.1
+content-type: application/json
+
+{
+    "phone": "01234567890",
+    "password": "123456"
+  }
+
+###
+GET http://localhost:3000/token HTTP/1.1
+content-type: application/json
+token: 16334318272306e1oj2cqn8s3bdapps6t
+
+###
+PUT http://localhost:3000/token HTTP/1.1
+content-type: application/json
+token: 16334318272306e1oj2cqn8s3bdapps6t
+
+###
+DELETE http://localhost:3000/token HTTP/1.1
+content-type: application/json
+token: 1633431884970dlq6shdke365kqg9jkck
